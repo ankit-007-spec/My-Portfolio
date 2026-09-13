@@ -1,268 +1,543 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Ankit Giri - Google Student Ambassador, Data Analyst & AI Enthusiast">
-  <title>Ankit Giri | Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Ankit Giri - Data Analyst, AI Engineer & Google Student Ambassador"
+    />
+    <title>Ankit Giri | Data Analyst & AI Engineer</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Typography & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
-  <!-- FontAwesome Icons & Custom CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
-  <!-- Header & Navigation -->
-  <header class="navbar">
-    <div class="nav-container">
-      <a href="#" class="logo">Ankit<span> Giri</span></a>
-      <nav aria-label="Main Navigation">
+  <body>
+    <!-- Perfectly Spaced & Balanced Floating Nav Capsule -->
+    <header class="nav-wrap">
+      <nav class="nav-capsule" aria-label="Main navigation">
+        <a href="#home" class="nav-brand">Ankit</a>
+        <div class="nav-divider" aria-hidden="true"></div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#experience" class="nav-item">Experience</a></li>
+          <li><a href="#projects" class="nav-item">Projects</a></li>
+          <li><a href="#skills" class="nav-item">Skills</a></li>
+          <li><a href="#resume" class="nav-item">Resume</a></li>
+          <li><a href="#contact" class="nav-item">Contact</a></li>
         </ul>
       </nav>
-      <!-- Dark Mode Toggle Button -->
-      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
-        <i class="fa-solid fa-moon"></i>
-      </button>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="hero-container">
-        <div class="hero-text">
-          <span class="greeting">Google Student Ambassador 2026</span>
-          <h1>Ankit Giri</h1>
-          <h2>Aspiring <span>Data Analyst</span> & AI Engineer</h2>
-          <p>BCA Student at ITM GIDA (AKTU) passionate about turning data into insights, C++ & DSA, and building AI-driven web applications.</p>
-          <div class="hero-cta">
-            <a href="#projects" class="btn btn-primary">View My Work</a>
-            <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-              <i class="fa-solid fa-file-arrow-down"></i> View Resume
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-text-col">
+            <div class="status-tag">
+              <span class="status-dot"></span>
+              <span>Google Student Ambassador 2026</span>
+            </div>
+
+            <h1 class="hero-heading">
+              An Engineer who<br />
+              Judges <span class="serif-accent">data</span><br />
+              by its architecture...
+            </h1>
+
+            <p class="hero-punchline">
+              Because if the underlying structure does not impress you, what
+              else can?
+            </p>
+
+            <div class="hero-bio" id="about">
+              <h3>I'm a Data Analyst & AI Engineer</h3>
+              <p>
+                Pursuing a Bachelor of Computer Applications at
+                <strong>ITM GIDA (AKTU Lucknow)</strong>. Passionate about
+                transforming complex datasets into reliable insights, writing
+                high-performance C++ code with data structures and algorithms,
+                and developing applied AI applications.
+              </p>
+            </div>
+
+            <div class="hero-cta-row">
+              <a href="#projects" class="btn-primary">
+                <i class="fa-solid fa-folder-open"></i> View Projects
+              </a>
+              <a href="#resume" class="btn-secondary">
+                <i class="fa-solid fa-file-lines"></i> Go to Resume
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Profile Picture -->
+          <div class="hero-avatar-col">
+            <div class="avatar-glass-card">
+              <div class="avatar-img-wrap">
+                <img src="ankit.jpg" alt="Ankit Giri" class="avatar-img" />
+                <div class="avatar-badge" title="Verified Ambassador">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+              </div>
+              <div class="avatar-info">
+                <h4>Ankit Giri</h4>
+                <p>Google Student Ambassador &bull; BCA (2025–2028)</p>
+                <div class="avatar-status-pill">
+                  <span class="pulse-indicator"></span> Open to Opportunities
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Experience Section -->
+      <section class="section" id="experience">
+        <div class="container">
+          <h2 class="section-title">Work Experience & Leadership</h2>
+
+          <div class="experience-grid">
+            <!-- Experience List -->
+            <div class="exp-list">
+              <div class="exp-card active" data-exp="gsa">
+                <h4>Google Student Ambassador — Campus Leadership</h4>
+                <p class="exp-meta">
+                  Google Student Ambassadors (India) &bull; May 2026 – Present
+                </p>
+                <p>
+                  Serving as a campus liaison to bridge university academics
+                  with practical technology standards, conducting peer training
+                  on modern developer tooling and cloud fundamentals.
+                </p>
+                <span class="exp-link">VIEW OVERVIEW &rarr;</span>
+              </div>
+
+              <div class="exp-card" data-exp="1m1b">
+                <h4>Green Skills & Applied AI Intern — 1M1B</h4>
+                <p class="exp-meta">
+                  1 Million for 1 Billion &bull; Experiential Project
+                </p>
+                <p>
+                  Completed 70+ hours of applied technical sessions building
+                  AI-enabled sustainability solutions targeting climate action.
+                </p>
+                <span class="exp-link">VIEW OVERVIEW &rarr;</span>
+              </div>
+
+              <div class="exp-card" data-exp="trainer">
+                <h4>AI Trainer & Coach — Technical Mentorship</h4>
+                <p class="exp-meta">On-site &bull; Uttar Pradesh</p>
+                <p>
+                  Delivered foundational machine learning workshops and mentored
+                  students on practical AI application, ethical usage, and
+                  Python fundamentals.
+                </p>
+                <span class="exp-link">VIEW OVERVIEW &rarr;</span>
+              </div>
+
+              <div class="exp-card" data-exp="simulations">
+                <h4>Software Engineering & Analytics Simulations</h4>
+                <p class="exp-meta">
+                  Deloitte & Commonwealth Bank (via Forage)
+                </p>
+                <p>
+                  Completed hands-on simulation tasks in forensic data analysis
+                  and backend service extension in C#/.NET with MongoDB and
+                  Postman API validation.
+                </p>
+                <span class="exp-link">VIEW OVERVIEW &rarr;</span>
+              </div>
+            </div>
+
+            <!-- Focus Panel -->
+            <div class="vision-wrap">
+              <div class="vision-cockpit">
+                <div class="cockpit-top">
+                  <div class="user-info">
+                    <img src="ankit.jpg" alt="AG" class="cockpit-avatar" />
+                    <div>
+                      <h4 id="panel-title" style="color: #fff; font-size: 1rem">
+                        Google Student Ambassador
+                      </h4>
+                      <span
+                        style="font-size: 0.75rem; color: var(--text-muted)"
+                        id="panel-org"
+                        >Google Student Ambassadors (India)</span
+                      >
+                    </div>
+                  </div>
+                  <span
+                    class="status-tag"
+                    style="margin-bottom: 0; font-size: 0.72rem"
+                    >Verified</span
+                  >
+                </div>
+
+                <div class="telemetry-card">
+                  <span class="tag-eyebrow" id="panel-category"
+                    >Campus Initiative</span
+                  >
+                  <p id="panel-desc">
+                    Leading on-campus initiatives to foster a collaborative
+                    technical community, providing peer guidance in C++, data
+                    fundamentals, and Google developer technologies.
+                  </p>
+                </div>
+
+                <div class="panel-details-list" id="panel-highlights">
+                  <div class="highlight-item">
+                    <i class="fa-solid fa-circle-check"></i> Organized technical
+                    awareness sessions
+                  </div>
+                  <div class="highlight-item">
+                    <i class="fa-solid fa-circle-check"></i> Mentored peers in
+                    algorithms and development
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects -->
+      <section class="section" id="projects">
+        <div class="container">
+          <h2 class="section-title">Featured Projects</h2>
+
+          <div class="project-stack">
+            <!-- Project 1 -->
+            <article class="project-card">
+              <div class="project-info">
+                <span class="tag-eyebrow">Data Systems &bull; C++</span>
+                <h3>Student Portfolio Record Engine</h3>
+                <p>
+                  A structured, deterministic console utility written in C++ to
+                  store, update, index, and query student performance records
+                  with clean memory usage.
+                </p>
+                <div class="chip-row">
+                  <span class="chip">C++</span>
+                  <span class="chip">Data Structures</span>
+                  <span class="chip">CLI</span>
+                  <span class="chip">File I/O</span>
+                </div>
+                <a
+                  href="https://github.com/ankit-007-spec"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="exp-link"
+                >
+                  VIEW ON GITHUB
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+              <div class="project-preview">
+                <div class="code-snippet-box">
+                  <div class="snippet-header">
+                    <span class="dot red"></span><span class="dot yellow"></span
+                    ><span class="dot green"></span>
+                    <span class="snippet-title">StudentRecord.cpp</span>
+                  </div>
+                  <pre><code>// Dynamic Record Allocation
+void insertRecord(Student s) {
+    recordIndex[s.rollNo] = s;
+    updateStorageStream(s);
+}</code></pre>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card">
+              <div class="project-info">
+                <span class="tag-eyebrow"
+                  >Applied AI &bull; Sustainability</span
+                >
+                <h3>Green AI Climate Monitoring Model</h3>
+                <p>
+                  An applied machine learning workflow designed during the 1M1B
+                  program to analyze local environmental metrics and generate
+                  data-driven sustainability summaries.
+                </p>
+                <div class="chip-row">
+                  <span class="chip">Python</span>
+                  <span class="chip">Machine Learning</span>
+                  <span class="chip">Data Analytics</span>
+                  <span class="chip">1M1B</span>
+                </div>
+                <a
+                  href="https://github.com/ankit-007-spec"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="exp-link"
+                >
+                  VIEW ON GITHUB
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+              <div class="project-preview">
+                <div class="code-snippet-box">
+                  <div class="snippet-header">
+                    <span class="dot red"></span><span class="dot yellow"></span
+                    ><span class="dot green"></span>
+                    <span class="snippet-title">climate_pipeline.py</span>
+                  </div>
+                  <pre><code># Predictive emission model
+def evaluate_variance(sensor_data):
+    features = extract_telemetry(sensor_data)
+    return model.predict(features)</code></pre>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card">
+              <div class="project-info">
+                <span class="tag-eyebrow">Systems Tooling &bull; Pure C</span>
+                <h3>CLI Arithmetic Parser & Calculator</h3>
+                <p>
+                  A lightweight command-line calculator implemented in pure C
+                  that handles fundamental mathematical computations via
+                  structured menu-driven parsing.
+                </p>
+                <div class="chip-row">
+                  <span class="chip">C</span>
+                  <span class="chip">CLI Tooling</span>
+                  <span class="chip">Algorithms</span>
+                </div>
+                <a
+                  href="https://github.com/ankit-007-spec"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="exp-link"
+                >
+                  VIEW ON GITHUB
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+              <div class="project-preview">
+                <div class="code-snippet-box">
+                  <div class="snippet-header">
+                    <span class="dot red"></span><span class="dot yellow"></span
+                    ><span class="dot green"></span>
+                    <span class="snippet-title">calculator.c</span>
+                  </div>
+                  <pre><code>// Core arithmetic evaluation
+int main() {
+    processMenuChoice();
+    executeOperation();
+    return 0;
+}</code></pre>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical Skills -->
+      <section class="section" id="skills">
+        <div class="container">
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <h4>Programming & Core</h4>
+              <div class="chip-row">
+                <span class="chip">C++ (DSA)</span>
+                <span class="chip">Python</span>
+                <span class="chip">C# / .NET</span>
+                <span class="chip">C</span>
+                <span class="chip">SQL</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">TypeScript</span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <h4>Data & Machine Learning</h4>
+              <div class="chip-row">
+                <span class="chip">Data Analytics</span>
+                <span class="chip">Exploratory Data Analysis</span>
+                <span class="chip">Data Visualization</span>
+                <span class="chip">GenAI Concepts</span>
+                <span class="chip">Predictive Modeling</span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <h4>Databases & Developer Tools</h4>
+              <div class="chip-row">
+                <span class="chip">MongoDB</span>
+                <span class="chip">PostgreSQL</span>
+                <span class="chip">Git</span>
+                <span class="chip">GitHub</span>
+                <span class="chip">Docker</span>
+                <span class="chip">Postman</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dedicated Resume Section -->
+      <section class="section" id="resume">
+        <div class="container">
+          <div class="resume-section-box">
+            <div class="resume-header">
+              <div>
+                <span class="tag-eyebrow">Curriculum Vitae</span>
+                <h2 class="section-title" style="margin-bottom: 0.5rem">
+                  Resume & Credentials
+                </h2>
+                <p style="color: var(--text-muted); font-size: 0.95rem">
+                  Official technical resume covering academic background at ITM
+                  GIDA, practical internships, and software skills.
+                </p>
+              </div>
+              <div class="resume-actions-group">
+                <a
+                  href="resume.pdf"
+                  download="Ankit_Giri_Resume.pdf"
+                  class="btn-primary"
+                >
+                  <i class="fa-solid fa-download"></i> Download PDF
+                </a>
+                <a
+                  href="resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-secondary"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Open in
+                  New Tab
+                </a>
+              </div>
+            </div>
+
+            <!-- Embedded Resume Frame -->
+            <div class="resume-embed-container">
+              <object
+                data="resume.pdf"
+                type="application/pdf"
+                class="resume-object"
+              >
+                <div class="resume-fallback-card">
+                  <i class="fa-solid fa-file-pdf"></i>
+                  <h3>Ankit Giri — Technical Resume</h3>
+                  <p>
+                    Unable to display the PDF inline in this browser window.
+                    Click below to view or download directly.
+                  </p>
+                  <div
+                    style="
+                      margin-top: 1rem;
+                      display: flex;
+                      gap: 1rem;
+                      justify-content: center;
+                    "
+                  >
+                    <a
+                      href="resume.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn-primary"
+                    >
+                      <i class="fa-solid fa-external-link"></i> View Document
+                    </a>
+                    <a
+                      href="resume.pdf"
+                      download="Ankit_Giri_Resume.pdf"
+                      class="btn-secondary"
+                    >
+                      <i class="fa-solid fa-download"></i> Download PDF
+                    </a>
+                  </div>
+                </div>
+              </object>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section" id="contact">
+        <div class="container contact-wrap">
+          <h2
+            style="
+              font-family: var(--font-display);
+              font-size: 2.5rem;
+              margin-bottom: 0.75rem;
+            "
+          >
+            Get In Touch
+          </h2>
+          <p
+            style="
+              color: var(--text-muted);
+              line-height: 1.7;
+              max-width: 650px;
+              margin: 0 auto;
+            "
+          >
+            Whether you are looking to discuss an upcoming data project, campus
+            ambassadorship initiative, or software engineering opportunity, feel
+            free to reach out.
+          </p>
+
+          <div>
+            <button
+              class="email-capsule"
+              id="copy-email-btn"
+              title="Click to copy email address"
+            >
+              <i class="fa-regular fa-envelope"></i>
+              <span id="email-label">aggiri5634@gmail.com</span>
+              <span class="copy-hint" id="copy-hint-pill"
+                ><i class="fa-regular fa-copy"></i> Click to Copy</span
+              >
+            </button>
+          </div>
+
+          <div class="social-row">
+            <a
+              href="https://github.com/ankit-007-spec"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-btn"
+              aria-label="GitHub Profile"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ankit-007-giri"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-btn"
+              aria-label="LinkedIn Profile"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
             </a>
           </div>
-        </div>
-        <div class="hero-image">
-          <img src="ankit.jpg" alt="Ankit Giri" width="300" height="300">
-        </div>
-      </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="card about-card">
-          <p>
-            I am a proactive <strong>BCA student at ITM GIDA</strong> (affiliated with AKTU, Lucknow) with a deep passion for turning data into actionable insights. 
-            As a <strong>Google Student Ambassador for 2026</strong>, I am committed to bridging the gap between academic learning and industry-level technology while building a tech-driven community.
-          </p>
-          <p>
-            My technical focus revolves around Data Analytics, Artificial Intelligence, C++ with Data Structures & Algorithms (DSA), and Full Stack Web Development.
+          <p style="font-size: 0.8rem; color: var(--text-dim)">
+            &copy; 2026 Ankit Giri. All rights reserved.
           </p>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- Education Section -->
-    <section id="education" class="section">
-      <div class="container">
-        <h2 class="section-title">Education</h2>
-        <div class="card education-card">
-          <div class="edu-header">
-            <h3>Bachelor of Computer Applications (BCA)</h3>
-            <span class="edu-status">Aug 2025 – Aug 2028</span>
-          </div>
-          <p class="edu-inst"><strong>Institute:</strong> ITM GIDA</p>
-          <p class="edu-univ"><strong>University:</strong> Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow</p>
-          <p class="edu-score"><strong>Focus:</strong> Computer Science, Software Engineering, C++, and DSA</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section">
-      <div class="container">
-        <h2 class="section-title">Experience</h2>
-        <div class="timeline">
-
-          <article class="timeline-item card">
-            <div class="badge">Internship</div>
-            <h3>Google Student Ambassador</h3>
-            <h4>Google Student Ambassadors (India)</h4>
-            <p class="program-title"><strong>Duration:</strong> May 2026 – Present | Remote</p>
-            <p>Representing Google on campus to foster a tech-driven community and bridge academic learning with real-world tech stack practices.</p>
-            <ul>
-              <li>Promoted AI and digital skills awareness across campus.</li>
-              <li>Fostered student engagement through technical leadership and community building.</li>
-            </ul>
-          </article>
-
-          <article class="timeline-item card">
-            <div class="badge">Self-Employed</div>
-            <h3>Independent Developer</h3>
-            <h4>Freelance / Open Source</h4>
-            <p class="program-title"><strong>Duration:</strong> Aug 2025 – Present</p>
-            <p>Developing data analysis models, CLI utilities, and modern web application projects.</p>
-          </article>
-
-          <article class="timeline-item card">
-            <div class="badge">Job Simulation</div>
-            <h3>Data Analytics Intern</h3>
-            <h4>Deloitte (via Forage)</h4>
-            <p class="program-title"><strong>Completion:</strong> May 2026</p>
-            <p>Completed practical tasks in forensic analysis, data interpretation, and exploratory data analysis.</p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-      <div class="container">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-grid">
-          
-          <div class="skill-category">
-            <h3>Languages & Core</h3>
-            <div class="skill-tags">
-              <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
-              <span class="skill-tag">C++</span>
-              <span class="skill-tag">C</span>
-              <span class="skill-tag">DSA</span>
-              <span class="skill-tag"><i class="fa-solid fa-database"></i> SQL</span>
-              <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h3>Data & AI</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Data Analytics</span>
-              <span class="skill-tag">Data Visualization</span>
-              <span class="skill-tag">Data Storytelling</span>
-              <span class="skill-tag">GenAI</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h3>Web & Tools</h3>
-            <div class="skill-tags">
-              <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
-              <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
-              <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
-              <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-
-          <article class="project-card">
-            <div class="project-content">
-              <h3>Simple Calculator Using C</h3>
-              <p>A lightweight, command-line interface (CLI) calculator performing fundamental arithmetic operations via a menu-driven program.</p>
-              <div class="project-tech">
-                <span>C</span>
-                <span>CLI</span>
-                <span>Algorithms</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-content">
-              <h3>Student Portfolio Record</h3>
-              <p>A structured platform designed to record, update, and maintain analytical student records efficiently.</p>
-              <div class="project-tech">
-                <span>C++ / Python</span>
-                <span>Data Management</span>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="section">
-      <div class="container">
-        <h2 class="section-title">Licenses & Certifications</h2>
-        <div class="projects-grid">
-
-          <article class="card">
-            <h3>GenAI Powered Data Analytics</h3>
-            <p><strong>Issued by:</strong> Forage (June 2026)</p>
-            <p>Exploratory data analysis, risk profiling, and predictive modeling using AI technologies.</p>
-          </article>
-
-          <article class="card">
-            <h3>Data Fundamentals</h3>
-            <p><strong>Issued by:</strong> IBM SkillsBuild (June 2026)</p>
-            <p>Data Science Methodology, Data Visualization, and core data architecture skills.</p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="card contact-card">
-          <div class="contact-details">
-            <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> <a href="mailto:aggiri5634@gmail.com">aggiri5634@gmail.com</a></p>
-            <p><i class="fa-solid fa-location-dot"></i> <strong>Location:</strong> Gorakhpur, Uttar Pradesh, India</p>
-            <p><i class="fa-brands fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ankit-007-giri" target="_blank" rel="noopener noreferrer">linkedin.com/in/ankit-007-giri</a></p>
-            <p><i class="fa-brands fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/ankit-007-spec" target="_blank" rel="noopener noreferrer">github.com/ankit-007-spec</a></p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 Ankit Giri. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <!-- Floating Social Links -->
-  <aside class="social-sidebar" aria-label="Social media links">
-    <a href="https://github.com/ankit-007-spec" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
-      <i class="fa-brands fa-github"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/ankit-007-giri" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
-      <i class="fa-brands fa-linkedin"></i>
-    </a>
-  </aside>
-
-  <!-- JS -->
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
