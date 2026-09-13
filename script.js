@@ -1,4 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Mobile Navigation Toggle
+  const navToggle = document.getElementById("nav-toggle");
+  const navLinksContainer = document.getElementById("nav-links-container");
+
+  if (navToggle && navLinksContainer) {
+    navToggle.addEventListener("click", () => {
+      navLinksContainer.classList.toggle("mobile-visible");
+      const icon = navToggle.querySelector("i");
+      if (navLinksContainer.classList.contains("mobile-visible")) {
+        icon.className = "fa-solid fa-xmark";
+      } else {
+        icon.className = "fa-solid fa-bars";
+      }
+    });
+
+    // Close menu when clicking a nav item on mobile
+    document.querySelectorAll(".nav-item").forEach((item) => {
+      item.addEventListener("click", () => {
+        navLinksContainer.classList.remove("mobile-visible");
+        const icon = navToggle.querySelector("i");
+        if (icon) icon.className = "fa-solid fa-bars";
+      });
+    });
+  }
+
   // Experience dataset
   const expData = {
     gsa: {
